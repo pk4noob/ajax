@@ -25,9 +25,9 @@
         $(document).ready(function(){
             $.ajax({
                 url: '/ajax_example/items.html',
-                type: 'JSON',
+                dataType: 'JSON',
             }).done(function(cavab) {
-                cavab.students.forEach(function(value, index) {
+                cavab.images.forEach(function(value, index) {
                     $('#siyahi').append('<img src="' + value + '">');
                 });
             });
